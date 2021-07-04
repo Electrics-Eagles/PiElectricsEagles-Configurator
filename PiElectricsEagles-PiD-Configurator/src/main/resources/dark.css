@@ -1,0 +1,37 @@
+#background_ui {
+-fx-background-color: #282828;
+}
+
+.button {
+    -fx-hgap: 2px;
+     -fx-padding: 4px;
+     -fx-background-color: #f73378;
+     -fx-background-radius: 50px;
+     -fx-border-radius: 50px;
+     -fx-border-width: 5px;
+
+}
+
+#text {
+    -fx-background-color: transparent ;
+    -fx-border-width: 1 1 1 1; -fx-border-color: transparent transparent white transparent;
+    -fx-border-style: solid;
+      -fx-text-fill: white;
+      -fx-font-size: 16px;
+
+}
+#text:focused {
+  -fx-border-width: 1 1 1 1; -fx-border-color: transparent transparent #f73378 transparent;
+  -fx-text-fill: white;
+  -fx-font-size: 16px;
+}
+
+#text:hover {
+  -fx-border-width: 1 1 1 1; -fx-border-color: transparent transparent #f73378 transparent;
+}
+
+.label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 12;
+}

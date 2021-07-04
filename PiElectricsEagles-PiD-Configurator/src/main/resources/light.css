@@ -1,0 +1,35 @@
+
+
+#background_ui {
+-fx-background-color: #ffffff;
+}
+
+.button {
+    -fx-hgap: 2px;
+     -fx-padding: 4px;
+     -fx-background-color: #08cc87;
+     -fx-background-radius: 50px;
+     -fx-border-radius: 50px;
+     -fx-border-width: 5px;
+
+}
+
+#text {
+    -fx-background-color: transparent ;
+    -fx-border-width: 1 1 1 1; -fx-border-color: transparent transparent black transparent;
+    -fx-border-style: solid;
+
+}
+#text:focused {
+  -fx-border-width: 1 1 1 1; -fx-border-color: transparent transparent #08cc87 transparent;
+}
+
+#text:hover {
+  -fx-border-width: 1 1 1 1; -fx-border-color: transparent transparent #f73378 transparent;
+}
+
+.Text {
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-font-size: 12;
+}

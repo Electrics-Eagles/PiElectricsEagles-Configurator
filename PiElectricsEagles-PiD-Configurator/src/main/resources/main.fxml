@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXSlider?>
+<?import eu.hansolo.tilesfx.addons.HappinessIndicator?>
+<?import eu.hansolo.tilesfx.tools.NotifyRegion?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="background" prefHeight="710.0" prefWidth="931.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="api.Controller">
+   <children>
+      <JFXButton buttonType="RAISED" layoutX="216.0" layoutY="134.0" onMouseClicked="#add_p_roll" prefHeight="36.0" prefWidth="97.0" text="+" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font></JFXButton>
+      <TextField fx:id="p_roll" layoutX="14.0" layoutY="140.0" AnchorPane.bottomAnchor="546.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="746.0" AnchorPane.topAnchor="140.0" />
+      <Text fill="WHITE" layoutX="18.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="P roll" wrappingWidth="213.7294921875" AnchorPane.bottomAnchor="597.0" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="699.2705078125" AnchorPane.topAnchor="68.0">
+         <font>
+            <Font name="Jamrul" size="29.0" />
+         </font>
+      </Text>
+      <JFXButton buttonType="RAISED" layoutX="216.0" layoutY="187.0" onMouseClicked="#sutract_p_roll" prefHeight="36.0" prefWidth="97.0" text="-" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="214.0" layoutY="262.0" onMouseClicked="#add_i_roll" prefHeight="36.0" prefWidth="97.0" text="+" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+      <TextField fx:id="i_roll" layoutX="14.0" layoutY="298.0" AnchorPane.bottomAnchor="388.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="746.0" AnchorPane.topAnchor="298.0" />
+      <Text fill="WHITE" layoutX="14.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="I roll" wrappingWidth="213.7294921875" AnchorPane.bottomAnchor="464.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="703.2705078125" AnchorPane.topAnchor="201.0">
+         <font>
+            <Font name="Jamrul" size="29.0" />
+         </font>
+      </Text>
+      <JFXButton buttonType="RAISED" layoutX="214.0" layoutY="315.0" onMouseClicked="#subtract_i_roll" prefHeight="36.0" prefWidth="97.0" text="-" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="215.0" layoutY="392.0" onMouseClicked="#add_d_roll" prefHeight="36.0" prefWidth="97.0" text="+" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+      <TextField fx:id="d_roll" layoutX="15.0" layoutY="428.0" AnchorPane.bottomAnchor="258.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="745.0" AnchorPane.topAnchor="428.0" />
+      <JFXButton buttonType="RAISED" layoutX="215.0" layoutY="445.0" onMouseClicked="#subtract_d_roll" prefHeight="36.0" prefWidth="97.0" text="-" textFill="WHITE" AnchorPane.bottomAnchor="229.0" AnchorPane.leftAnchor="215.0" AnchorPane.rightAnchor="619.0" AnchorPane.topAnchor="445.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+      <Text fill="WHITE" layoutX="18.0" layoutY="403.0" strokeType="OUTSIDE" strokeWidth="0.0" text="D roll" wrappingWidth="213.7294921875" AnchorPane.bottomAnchor="295.0" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="699.2705078125" AnchorPane.topAnchor="370.0">
+         <font>
+            <Font name="Jamrul" size="29.0" />
+         </font>
+      </Text>
+      <JFXButton buttonType="RAISED" layoutX="554.0" layoutY="131.0" onMouseClicked="#add_p_yaw" prefHeight="36.0" prefWidth="97.0" text="+" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+      <TextField fx:id="p_yaw" layoutX="352.0" layoutY="137.0" />
+      <Text fill="WHITE" layoutX="356.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="P yaw" wrappingWidth="213.7294921875">
+         <font>
+            <Font name="Jamrul" size="29.0" />
+         </font>
+      </Text>
+      <JFXButton buttonType="RAISED" layoutX="554.0" layoutY="184.0" onMouseClicked="#subtract_p_yaw" prefHeight="36.0" prefWidth="97.0" text="-" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="552.0" layoutY="259.0" onMouseClicked="#add_i_yaw" prefHeight="36.0" prefWidth="97.0" text="+" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+      <TextField fx:id="i_yaw" layoutX="352.0" layoutY="295.0" />
+      <Text fill="WHITE" layoutX="352.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="I yaw" wrappingWidth="213.7294921875">
+         <font>
+            <Font name="Jamrul" size="29.0" />
+         </font>
+      </Text>
+      <JFXButton buttonType="RAISED" layoutX="552.0" layoutY="312.0" onMouseClicked="#subtract_i_yaw" prefHeight="36.0" prefWidth="97.0" text="-" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="553.0" layoutY="389.0" onMouseClicked="#add_d_yaw" prefHeight="36.0" prefWidth="97.0" text="+" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+      <TextField fx:id="d_yaw" layoutX="353.0" layoutY="425.0" />
+      <JFXButton buttonType="RAISED" layoutX="553.0" layoutY="442.0" onMouseClicked="#subtract_d_yaw" prefHeight="36.0" prefWidth="97.0" text="-" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+      <Text fill="WHITE" layoutX="356.0" layoutY="400.0" strokeType="OUTSIDE" strokeWidth="0.0" text="D yaw" wrappingWidth="213.7294921875">
+         <font>
+            <Font name="Jamrul" size="29.0" />
+         </font>
+      </Text>
+      <JFXButton buttonType="RAISED" layoutX="707.0" layoutY="640.0" onMouseClicked="#next" prefHeight="42.0" prefWidth="181.0" text="Next step" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="18.0" layoutY="640.0" onMouseClicked="#exit" prefHeight="42.0" prefWidth="181.0" text="Exit" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="512.0" layoutY="525.0" onMouseClicked="#yes" prefHeight="36.0" prefWidth="122.0" text="Yes" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="670.0" layoutY="527.0" onMouseClicked="#no" prefHeight="36.0" prefWidth="106.0" text="No" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+      <Text fill="WHITE" layoutX="34.0" layoutY="550.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Did drone was flying better?" wrappingWidth="456.7294921875">
+         <font>
+            <Font name="Jamrul" size="29.0" />
+         </font>
+      </Text>
+      <NotifyRegion layoutX="867.0" prefHeight="73.0" prefWidth="64.0" />
+      <HappinessIndicator fx:id="level" layoutX="34.0" layoutY="570.0" prefHeight="61.0" prefWidth="80.0" />
+      <JFXSlider fx:id="slider" layoutX="129.0" layoutY="601.0" onMouseClicked="#changed" prefHeight="16.0" prefWidth="611.0" />
+      <JFXCheckBox fx:id="checkbox" layoutX="776.0" layoutY="28.0" onMouseClicked="#change_theme" text="Light UI" textFill="WHITE" />
+      <JFXComboBox fx:id="comport" layoutX="679.0" layoutY="98.0" prefHeight="36.0" prefWidth="228.0" />
+      <Circle fx:id="status" fill="DODGERBLUE" layoutX="704.0" layoutY="306.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
+      <JFXButton buttonType="RAISED" layoutX="679.0" layoutY="237.0" onMouseClicked="#connect" prefHeight="36.0" prefWidth="228.0" text="Connect" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXComboBox fx:id="baudrate" layoutX="679.0" layoutY="178.0" prefHeight="36.0" prefWidth="228.0" />
+      <Text fill="WHITE" layoutX="679.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Port" wrappingWidth="228.0">
+         <font>
+            <Font name="Jamrul" size="21.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="686.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Baudrate" wrappingWidth="213.7294921875">
+         <font>
+            <Font name="Jamrul" size="21.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
