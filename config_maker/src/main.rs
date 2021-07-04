@@ -100,6 +100,7 @@ fn save_config(data:Data) {
     conf.with_section(Some("pid-config")).set("p_pid_yaw", data.p_pid_yaw);
     conf.with_section(Some("pid-config")).set("i_pid_yaw", data.i_pid_yaw);
     conf.with_section(Some("pid-config")).set("d_pid_yaw", data.d_pid_yaw);
+    conf.with_section(Some("pid-config")).set("max_yaw", data.max_yaw);
     conf.with_section(Some("pid-config")).set("p_pid_pitch", data.p_pid_pitch);
     conf.with_section(Some("pid-config")).set("i_pid_pitch", data.i_pid_pitch);
     conf.with_section(Some("pid-config")).set("d_pid_pitch", data.d_pid_pitch);
@@ -186,7 +187,7 @@ fn detect_config() -> Data {
            p_pid_yaw: config.get("pid-config", "p_pid_yaw").unwrap(),
            i_pid_yaw: config.get("pid-config", "i_pid_yaw").unwrap(),
            d_pid_yaw: config.get("pid-config", "d_pid_yaw").unwrap(),
-           max_yaw: config.get("pid-config", "d_pid_yaw").unwrap(),
+           max_yaw: config.get("pid-config", "max_yaw").unwrap(),
            p_pid_pitch: config.get("pid-config", "p_pid_pitch").unwrap(),
            i_pid_pitch: config.get("pid-config", "i_pid_pitch").unwrap(),
            d_pid_pitch: config.get("pid-config", "d_pid_pitch").unwrap(),
